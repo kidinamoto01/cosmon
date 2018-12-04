@@ -1,5 +1,7 @@
 # Cosmos Monitor
 
+This is a tool for monitoring Gaiad status of Cosmos Hub.
+
 ### Build
 ```
 go build .
@@ -15,4 +17,3 @@ You can run
 ```
 ./cosmon --help 
 ```
-to get more information.
