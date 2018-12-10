@@ -64,17 +64,17 @@ func PrometheusMetrics() *Metrics {
 		ProcCPUUtilization: prometheus.NewGaugeFrom(stdprometheus.GaugeOpts{
 			Subsystem: "system",
 			Name:      "process_cpu_percent",
-			Help:      "CPU Utilization Percantage of the processes iris start",
+			Help:      "CPU Utilization Percantage of the processes gaiad start",
 		}, []string{}),
 		ProcMemoUtilization: prometheus.NewGaugeFrom(stdprometheus.GaugeOpts{
 			Subsystem: "system",
 			Name:      "process_memo_percent",
-			Help:      "Memory Utilization Percantage of processes iris start",
+			Help:      "Memory Utilization Percantage of processes gaiad start",
 		}, []string{}),
 		ProcOpenedFilesNum: prometheus.NewGaugeFrom(stdprometheus.GaugeOpts{
 			Subsystem: "system",
 			Name:      "opened_files_number",
-			Help:      "Number of Opened Files of processes iris start",
+			Help:      "Number of Opened Files of processes gaiad start",
 		}, []string{}),
 		DiskUsedPercentage: prometheus.NewGaugeFrom(stdprometheus.GaugeOpts{
 			Subsystem: "system",
@@ -94,7 +94,7 @@ func PrometheusMetrics() *Metrics {
 		ProcNum: prometheus.NewGaugeFrom(stdprometheus.GaugeOpts{
 			Subsystem: "system",
 			Name:      "process_number",
-			Help:      "Process number of processes iris start",
+			Help:      "Process number of processes gaiad start",
 		}, []string{}),
 		recursively: true,
 		/*
